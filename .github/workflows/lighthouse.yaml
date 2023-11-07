@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Display Lighthouse Report
-      run: cat lighthouse_report/lighthouse.json  # Ganti dengan path file Lighthouse Anda
+      run: cat lighthouse.json
