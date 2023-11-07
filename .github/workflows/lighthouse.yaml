@@ -1,19 +1,17 @@
-name: Lighthouse CI
+name: Display Lighthouse Report
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Ganti dengan branch Anda
 
 jobs:
-  lighthouse:
+  display_lighthouse_report:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-    - name: Install Dependencies
-      run: npm install
-    - name: Run Lighthouse
-      run: npx lighthouse https://your-website-url.com --output=json --output-path=./lighthouse.json
-    - name: Upload Lighthouse
-      uses: actions/upload-artifact@v2
-      with:
-        name: lighthouse-report
-        path: ./lighthouse.json
+
+    - name: Display Lighthouse Report
+      run: cat lighthouse_report/lighthouse.json  # Ganti dengan path file Lighthouse Anda
