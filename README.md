@@ -1,1 +1,1 @@
-Anda dapat melihat struktur data lengkap di [file JSON ini](lighthouse.json).
+Anda dapat melihat struktur data lengkap di [file ini](lighthouse.html).
