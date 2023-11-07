@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && node sharp.js",
     "test": "karma start",
-    "build-image": "node sharp.js",
     "lint": "eslint ./src/scripts",
     "e2e": "codeceptjs run --steps"
   },
